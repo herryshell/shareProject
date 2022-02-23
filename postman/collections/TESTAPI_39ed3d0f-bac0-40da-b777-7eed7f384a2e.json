@@ -1,0 +1,336 @@
+{
+    "info": {
+        "_postman_id": "3dc0c9fa-edd9-419e-aa4f-6bd426623dfc",
+        "name": "TESTAPI",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Details about a user",
+            "id": "968074ce-7293-4519-907a-e37e3b35e1aa",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/user?id=2",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "user"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "2"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "81686927-1c1a-49f2-8454-21aae698acb4",
+                    "name": "Details about a user",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "Added as a part of security scheme: basic",
+                                "key": "Authorization",
+                                "value": "Basic <credentials>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=2",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "disabled": false,
+                            "description": "A link to the next page of responses",
+                            "key": "x-next",
+                            "value": "elit laboris laborum"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n  \"id\": -6213758,\n  \"name\": \"nisi Lorem eu\",\n  \"tag\": \"consectetur veniam exercitation\"\n}"
+                },
+                {
+                    "id": "748bb7bc-eda6-4ea0-9777-bc39c83f22f0",
+                    "name": "Details about a user Copy",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "Added as a part of security scheme: basic",
+                                "key": "Authorization",
+                                "value": "Basic <credentials>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=1",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "disabled": false,
+                            "description": "A link to the next page of responses",
+                            "key": "x-next",
+                            "value": "elit laboris laborum"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n  \"id\": 1,\n  \"name\": \"nisi Lorem eu\",\n  \"tag\": \"consectetur veniam exercitation\"\n}"
+                },
+                {
+                    "id": "13860298-8da4-4101-a027-cacc698baa10",
+                    "name": "500",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "Added as a part of security scheme: basic",
+                                "key": "Authorization",
+                                "value": "Basic <credentials>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=-83030880",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "-83030880"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n  \"code\": 93386358,\n  \"message\": \"deserunt nisi qui proident elit\"\n}"
+                },
+                {
+                    "id": "e2331fd8-a268-4eb3-9cd9-44cf78011d2b",
+                    "name": "404",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "Added as a part of security scheme: basic",
+                                "key": "Authorization",
+                                "value": "Basic <credentials>"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=-83030880",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "-83030880"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n  \"code\": 404,\n  \"message\": \"AAA\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "/admin/login/login",
+            "id": "0d7c359b-c497-411b-82a8-7381dc9d0a71",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"account\": \"SBDTESTYG01\",\r\n    \"password\": \"a123456\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/admin/login/login",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "admin",
+                        "login",
+                        "login"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "3f2e9c0e-66c1-44e6-b076-be583610c2af",
+                    "name": "/admin/login/login",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "name": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"account\": \"SBDTESTYG01\",\r\n    \"password\": \"a123456\"\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/admin/login/login",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "admin",
+                                "login",
+                                "login"
+                            ]
+                        }
+                    },
+                    "_postman_previewlanguage": "json",
+                    "header": null,
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"code\": 0,\n    \"flow_id\": \"905d4459-373c-a46c-8673-82df7fbbc513\",\n    \"msg\": \"操作成功333333\",\n    \"data\": {\n        \"staff_id\": 3,\n        \"company_sn\": \"JHWMSCOMPANY2\",\n        \"staff_type\": 0,\n        \"nick_name\": \"\",\n        \"user_name\": \"势必达测试员工1\",\n        \"head_img\": \"\",\n        \"account\": \"SBDTESTYG01\",\n        \"wh_list\": [\n            {\n                \"wh_sn\": \"JHWMSCOMPANY2warehouse1\",\n                \"wh_name\": \"势必达测试仓\"\n            },\n            {\n                \"wh_sn\": \"JHWMSCOMPANY2warehouse2\",\n                \"wh_name\": \"势必达测试灰度仓\"\n            }\n        ],\n        \"wh_sn\": \"JHWMSCOMPANY2warehouse1\",\n        \"wh_id\": \"1\",\n        \"owner_sns\": [\n            \"SBDCS003\",\n            \"XYPT\",\n            \"SL001\",\n            \"SBDCS004\",\n            \"SBDCS001\",\n            \"SBDCS002\"\n        ],\n        \"node_info\": [\n            \"基础数据-货品-列表\",\n            \"基础数据-货品-查看\",\n            \"基础数据-承运商-列表\",\n            \"基础数据-承运商-新增\",\n            \"基础数据-承运商-编辑\",\n            \"系统配置-货主-列表\",\n            \"系统配置-货主-新增\",\n            \"系统配置-货主-编辑\",\n            \"入库管理-采购订单-列表\",\n            \"入库管理-采购订单-查看\",\n            \"系统配置-仓库-列表\",\n            \"系统配置-仓库-编辑\",\n            \"权限管理-角色-列表\",\n            \"权限管理-用户-列表\",\n            \"入库管理-入库交接-确认交接\",\n            \"入库管理-交接记录-新增\",\n            \"入库管理-交接记录-列表\",\n            \"入库管理-交接记录-编辑\",\n            \"入库管理-交接记录-确认处理\",\n            \"入库管理-交接记录-更换容器\",\n            \"入库管理-交接记录-反馈\",\n            \"入库管理-交接记录-取消\",\n            \"PDA入库管理-PDA入库交接-提交\",\n            \"入库管理-入库质检-删除\",\n            \"入库管理-入库质检-质检完成\",\n            \"入库管理-入库质检-进行质检\",\n            \"入库管理-质检任务-列表\",\n            \"入库管理-质检任务-导出\",\n            \"入库管理-质检任务-查看明细\",\n            \"入库管理-质检异常跟踪-列表\",\n            \"入库管理-质检异常跟踪-确认处理\",\n            \"数据中心-导入导出-列表\",\n            \"数据中心-导入导出-下载\",\n            \"策略规则配置-基础数据字典-列表\",\n            \"策略规则配置-基础数据字典-编辑\",\n            \"基础数据-货位管理-批量新增\",\n            \"基础数据-货位管理-列表\",\n            \"基础数据-货位管理-编辑\",\n            \"基础数据-货位管理-可用\",\n            \"基础数据-货位管理-冻结\",\n            \"基础数据-货位管理-禁用\",\n            \"基础数据-库区管理-列表\",\n            \"基础数据-库区管理-新增\",\n            \"基础数据-库区管理-编辑\",\n            \"基础数据-库区管理-导出\",\n            \"基础数据-容器管理-列表\",\n            \"基础数据-容器管理-新增\",\n            \"基础数据-货位管理-导入\",\n            \"基础数据-货位管理-导出\",\n            \"入库管理-质检任务-二次质检\",\n            \"库内管理-库存查询-列表\",\n            \"库内管理-库存交易-列表\",\n            \"入库管理-收货交易-列表\",\n            \"策略规则配置-批属性规则-列表\",\n            \"策略规则配置-批属性规则-新增\",\n            \"策略规则配置-批属性规则-编辑\",\n            \"策略规则配置-入库策略-列表\",\n            \"策略规则配置-入库策略-保存\",\n            \"入库管理-收货交易-查看明细\",\n            \"入库管理-收货交易-撤销收货\",\n            \"基础数据-货品存放规则-列表\",\n            \"基础数据-货品存放规则-新增\",\n            \"基础数据-货品存放规则-编辑\",\n            \"基础数据-货品存放规则-删除\",\n            \"库内管理-上架任务-列表\",\n            \"策略规则配置-波次策略-列表\",\n            \"策略规则配置-波次策略-新增策略\",\n            \"策略规则配置-波次策略-编辑\",\n            \"策略规则配置-波次策略-启用\",\n            \"策略规则配置-波次策略-停用\",\n            \"库内管理-上架任务-上架明细\",\n            \"库内管理-无单移库-列表\",\n            \"库内管理-无单移库-确认移库\",\n            \"出库管理-出库订单-列表\",\n            \"出库管理-出库订单-查看\",\n            \"策略规则配置-分配策略-列表\",\n            \"PDA库内管理-PDA上架管理-上架\",\n            \"PDA库内管理-PDA无单移库-移库\",\n            \"出库管理-复核任务-列表\",\n            \"出库管理-分播任务-列表\",\n            \"出库管理-拣选任务-列表\",\n            \"出库管理-拣选任务-查看明细\",\n            \"出库管理-分播任务-查看明细\",\n            \"出库管理-单品扫描-列表\",\n            \"出库管理-复核任务-查看明细\",\n            \"PDA出库管理-PDA拣选-PDA拣选\",\n            \"出库管理-二次分拣-列表\",\n            \"出库管理-出库复核-列表\",\n            \"出库管理-打包称重-列表\",\n            \"出库管理-缺货出库单-列表\",\n            \"出库管理-缺货出库单-查看明细\",\n            \"出库管理-缺货出库单-挑选库存\",\n            \"出库管理-缺货出库单-打印\",\n            \"出库管理-缺货出库单-已处理\",\n            \"出库管理-单品扫描-完成分播\",\n            \"出库管理-单品扫描-补打面单\",\n            \"出库管理-出库订单-撤销分配\",\n            \"出库管理-出库订单-分配\",\n            \"出库管理-交接明细-查看\",\n            \"出库管理-交接明细-列表\",\n            \"出库管理-交接明细-导出\",\n            \"出库管理-出库复核-完成复核\",\n            \"出库管理-装箱明细-列表\",\n            \"出库管理-出库发运-列表\",\n            \"出库管理-出库发运-确认发运\",\n            \"出库管理-出库装箱-列表\",\n            \"出库管理-装箱明细-查看\",\n            \"出库管理-二次分拣-完成分播\",\n            \"出库管理-二次分拣-补打面单\",\n            \"出库管理-出库订单-补打面单\",\n            \"出库管理-交接明细-打印交接单\",\n            \"库内管理-库存调整-列表\",\n            \"库内管理-库存调整-查看明细\",\n            \"库内管理-库存调整-新增\",\n            \"库内管理-库存调整-取消\",\n            \"库内管理-库存调整-执行调整\",\n            \"PDA库内管理-PDA库存查询-查询\",\n            \"入库管理-分货任务-分货任务\",\n            \"入库管理-分货任务-查看明细\",\n            \"PDA入库管理-PDA分货-PDA分货\",\n            \"基础数据-打印模板-列表\",\n            \"基础数据-打印模板-复制\",\n            \"基础数据-打印模板-新增\",\n            \"基础数据-打印模板-编辑\",\n            \"基础数据-打印模板-删除\",\n            \"基础数据-打印模板-启用\",\n            \"基础数据-货品信息采集-查询\",\n            \"基础数据-货品信息采集-保存\",\n            \"基础数据-耗材管理-列表\",\n            \"基础数据-耗材管理-新增\",\n            \"基础数据-耗材管理-删除\",\n            \"基础数据-耗材管理-编辑\",\n            \"策略规则配置-出库策略-查看\",\n            \"策略规则配置-出库策略-保存\",\n            \"出库管理-二次交运订单-列表\",\n            \"出库管理-二次交运订单-重新寻源\",\n            \"出库管理-二次交运打单-查看\",\n            \"入库管理-质检任务-取消\",\n            \"出库管理-出库打包-列表\",\n            \"报表-采购到货预测-列表\",\n            \"出库管理-出库打包-出库打包\",\n            \"入库管理-收货交易-导入\",\n            \"库内管理-库存查询-导出\"\n        ],\n        \"node_url\": [\n            \"admin/product/sku/list\",\n            \"admin/product/sku/detail\",\n            \"admin/common/express/list\",\n            \"admin/common/express/add\",\n            \"admin/common/express/info\",\n            \"admin/common/express/edit\",\n            \"admin/common/owner/list\",\n            \"admin/common/owner/add\",\n            \"admin/common/owner/edit\",\n            \"admin/common/owner/detail\",\n            \"work/warehousing/purchase-order/list\",\n            \"work/warehousing/purchase-order/detail\",\n            \"admin/common/warehouse/list\",\n            \"admin/common/warehouse/detail\",\n            \"admin/common/warehouse/edit\",\n            \"admin/rbac/role/list\",\n            \"admin/rbac/staff/list\",\n            \"work/warehousing/handler/get-po\",\n            \"work/warehousing/handler/add\",\n            \"work/warehousing/check/check-container\",\n            \"work/warehousing/handler/add\",\n            \"work/warehousing/handler/list\",\n            \"work/warehousing/handler/update\",\n            \"work/warehousing/feedback/ack-handler\",\n            \"work/warehousing/handler/change-container\",\n            \"work/warehousing/feedback/handler\",\n            \"work/warehousing/handler/close\",\n            \"admin/common/express/list\",\n            \"admin/common/owner/list\",\n            \"work/warehousing/handler/get-po\",\n            \"work/warehousing/handler/add\",\n            \"work/warehousing/check/del-result\",\n            \"work/warehousing/check/check-complete\",\n            \"work/warehousing/check/create\",\n            \"work/warehousing/check/get-po\",\n            \"work/warehousing/check/add-handler\",\n            \"work/warehousing/check/purchase-order-sku-list\",\n            \"work/warehousing/check/result\",\n            \"work/warehousing/check/check-validation\",\n            \"work/warehousing/check/sku-info\",\n            \"work/warehousing/check/check-validation\",\n            \"work/warehousing/check/exec-check\",\n            \"admin/upload/get-token\",\n            \"admin/common/data-dictionary/detail\",\n            \"work/warehousing/check/save-sku\",\n            \"work/warehousing/check/data-range\",\n            \"work/warehousing/batch/batch-sn\",\n            \"work/warehousing/shelve/close-container\",\n            \"work/label/label/list\",\n            \"work/warehousing/check/task-list\",\n            \"work/warehousing/check/task-export\",\n            \"work/warehousing/check/task-detail\",\n            \"work/warehousing/check/exception-list\",\n            \"work/warehousing/check/exception\",\n            \"work/warehousing/check/processing\",\n            \"work/warehousing/task/list\",\n            \"work/warehousing/task/download\",\n            \"admin/common/data-dictionary/parent-list\",\n            \"admin/common/data-dictionary/detail\",\n            \"admin/common/data-dictionary/edit\",\n            \"admin/common/cargo-space/add\",\n            \"admin/common/cargo-space/list\",\n            \"work/label/label/list\",\n            \"admin/common/cargo-space/detail\",\n            \"admin/common/cargo-space/edit\",\n            \"admin/common/cargo-space/change-status\",\n            \"admin/common/cargo-space/change-status\",\n            \"admin/common/cargo-space/change-status\",\n            \"admin/common/warehouse-part/list\",\n            \"admin/common/warehouse-part/add\",\n            \"admin/common/warehouse-part/relation\",\n            \"admin/common/warehouse-part/info\",\n            \"admin/common/warehouse-part/relation\",\n            \"admin/common/warehouse-part/edit\",\n            \"admin/common/warehouse-part/export\",\n            \"admin/common/container/list\",\n            \"work/label/label/list\",\n            \"admin/common/container/add\",\n            \"admin/common/cargo-space/import\",\n            \"admin/common/cargo-space/export\",\n            \"work/warehousing/check/get-sample-info\",\n            \"work/warehousing/check/recreate-check\",\n            \"work/warehousing/stock/list\",\n            \"work/warehousing/stock/trade\",\n            \"work/warehousing/stock/trade-type\",\n            \"work/warehousing/receipt/list\",\n            \"work/warehousing/batch/rule-list\",\n            \"work/warehousing/batch/add-rule\",\n            \"work/warehousing/batch/rule-info\",\n            \"work/warehousing/batch/edit-rule\",\n            \"work/warehousing/strategy/receive-cargo-space-list\",\n            \"work/warehousing/strategy/stockin-strategy-info\",\n            \"work/warehousing/strategy/add-stockin-strategy\",\n            \"work/warehousing/strategy/edit-stockin-strategy\\n\",\n            \"work/warehousing/strategy/edit-stockin-strategy\",\n            \"work/warehousing/receipt/detail\",\n            \"work/warehousing/receipt/repeal\",\n            \"admin/common/sku-storage-rule/list\",\n            \"admin/common/sku-storage-rule/add\",\n            \"admin/common/sku-storage-rule/get-owner\",\n            \"admin/common/sku-storage-rule/check-space\",\n            \"admin/common/sku-storage-rule/edit\",\n            \"admin/common/sku-storage-rule/get-owner\",\n            \"admin/common/sku-storage-rule/check-space\",\n            \"admin/common/sku-storage-rule/remove\",\n            \"work/warehousing/shelve/list\",\n            \"admin/rbac/staff/list\",\n            \"work/outbound/wave/list\",\n            \"admin/common/owner/list\",\n            \"admin/common/owner/add\",\n            \"admin/common/owner/detail\",\n            \"work/outbound/wave/edit\",\n            \"work/outbound/wave/detail\",\n            \"work/outbound/wave/add\",\n            \"admin/common/owner/detail\",\n            \"admin/common/owner/edit\",\n            \"work/outbound/wave/edit\",\n            \"work/outbound/wave/detail\",\n            \"work/outbound/wave/change-status\",\n            \"work/outbound/wave/change-status\",\n            \"work/warehousing/shelve/detail\",\n            \"work/warehousing/stock/list\",\n            \"work/warehousing/stock/no-ticket-move\",\n            \"work/outbound/out-bound-order/list\",\n            \"work/outbound/out-bound-order/detail\",\n            \"work/warehousing/stock-distribute-rules/index\",\n            \"work/warehousing/stock-distribute-rules/update\",\n            \"work/warehousing/shelve/receive\",\n            \"work/warehousing/shelve/up\",\n            \"work/warehousing/shelve/receive-info\",\n            \"work/warehousing/stock/check-source-cargo-space\",\n            \"work/warehousing/stock/no-ticket-move\",\n            \"work/outbound/out-bound-order/check-list\",\n            \"work/outbound/seed/list\",\n            \"work/outbound/pick/list\",\n            \"work/outbound/pick/detail\",\n            \"work/outbound/seed/detail\",\n            \"work/outbound/sku-scan/pend-order\",\n            \"work/outbound/sku-scan/submit-order\",\n            \"work/outbound/sku-scan/verify-order\",\n            \"work/outbound/sku-scan/check\",\n            \"work/outbound/sku-scan/check\",\n            \"work/outbound/out-bound-order/check-detail\",\n            \"work/outbound/pick/pda-list\",\n            \"work/outbound/pick/bind-task\",\n            \"work/outbound/pick/do-detail\",\n            \"work/outbound/pick/close-container\",\n            \"work/outbound/pick/scan-container\",\n            \"work/outbound/seed/receive-list\",\n            \"work/outbound/seed/pick\",\n            \"work/outbound/out-bound-order/re-check-info\",\n            \"work/outbound/out-bound-order/re-check\",\n            \"work/outbound/out-bound-order/check-pack\",\n            \"work/outbound/out-bound-order/material\",\n            \"\",\n            \"work/warehousing/consumable-material/get-material-info\",\n            \"work/config/outbound\",\n            \"work/outbound/less/list\",\n            \"work/outbound/less/sku-detail\",\n            \"work/outbound/less/pick-detail\",\n            \"work/outbound/less/pick-stock\",\n            \"work/outbound/less/assign-stock\",\n            \"work/outbound/less/print\",\n            \"work/outbound/less/complete\",\n            \"work/outbound/sku-scan/complete\",\n            \"work/outbound/seed/print\",\n            \"work/outbound/out-bound-order/revoke\",\n            \"work/outbound/out-bound-order/distribute\",\n            \"work/outbound/shipment/hand-over-detail\",\n            \"work/outbound/shipment/hand-over\",\n            \"admin/admin/export\",\n            \"work/outbound/out-bound-order/check-finish\",\n            \"work/outbound/box/list\",\n            \"work/label/label/list\",\n            \"work/outbound/shipment/create-flow-sn\",\n            \"work/outbound/shipment/scan-flow-sn\",\n            \"work/outbound/shipment/scan-box-sn\",\n            \"work/outbound/shipment/cancel-box-sn\",\n            \"work/outbound/shipment/confirm-shipment\",\n            \"work/outbound/box/add\",\n            \"work/outbound/box/packing\",\n            \"work/outbound/box/close\",\n            \"work/outbound/box/open\",\n            \"work/outbound/box/pick-detail\",\n            \"work/label/label/list\",\n            \"work/outbound/box/detail\",\n            \"work/outbound/seed/complete\",\n            \"work/outbound/seed/print\",\n            \"work/outbound/seed/print\",\n            \"work/outbound/shipment/create-print-pdf\",\n            \"work/inside/stock-adjust/adjust-list\",\n            \"work/inside/stock-adjust/adjust-type-reason\",\n            \"work/inside/stock-adjust/adjust-detail\",\n            \"work/inside/stock-adjust/create-adjust-sn\",\n            \"work/inside/stock-adjust/adjust-type-reason\",\n            \"work/inside/stock-adjust/stock-list\",\n            \"work/inside/stock-adjust/create-adjust-data\",\n            \"work/inside/stock-adjust/cancel-adjust\",\n            \"work/inside/stock-adjust/cancel-adjust-details\",\n            \"work/inside/stock-adjust/do-adjust\",\n            \"work/warehousing/stock/space\",\n            \"work/warehousing/stock/sku\",\n            \"work/warehousing/stock-cross/list\",\n            \"work/warehousing/stock-cross/detail\",\n            \"work/warehousing/stock-cross/container-no\",\n            \"work/warehousing/stock-cross/container-no-and-sku\",\n            \"work/warehousing/stock-cross/bind-container\",\n            \"work/label/label/list\",\n            \"work/label/label/copy\",\n            \"work/label/label/select-box\",\n            \"work/label/label/create\",\n            \"work/label/label/select-box\",\n            \"work/label/label/edit\",\n            \"work/label/label/select-box\",\n            \"work/label/label/delete\",\n            \"work/label/label/on-off\",\n            \"admin/product/sku/info\",\n            \"admin/product/sku/info\",\n            \"admin/product/sku/save-info\",\n            \"work/warehousing/consumable-material/list\",\n            \"work/warehousing/consumable-material/create\",\n            \"work/warehousing/consumable-material/delete\",\n            \"work/warehousing/consumable-material/edit\",\n            \"work/config/outbound\",\n            \"work/config/outbound\",\n            \"work/config/outbound/save\",\n            \"work/outbound/delivery/list\",\n            \"work/outbound/delivery/resource\",\n            \"work/outbound/delivery/change\",\n            \"work/warehousing/check/cancel-check\",\n            \"work/outbound/out-bound-order/check-pack\",\n            \"work/warehousing/consumable-material/get-material-info\",\n            \"work/outbound/out-bound-order/pack\",\n            \"report/purchase/arrival-time-report\",\n            \"work/outbound/out-bound-order/pack\",\n            \"work/warehousing/receipt/import\",\n            \"admin/admin/export\"\n        ],\n        \"menu_info\": [\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"货品\",\n                \"menu2_id\": 2\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"承运商\",\n                \"menu2_id\": 3\n            },\n            {\n                \"menu1_name\": \"权限管理\",\n                \"menu1_id\": 4,\n                \"menu2_name\": \"用户\",\n                \"menu2_id\": 5\n            },\n            {\n                \"menu1_name\": \"权限管理\",\n                \"menu1_id\": 4,\n                \"menu2_name\": \"角色\",\n                \"menu2_id\": 6\n            },\n            {\n                \"menu1_name\": \"系统配置\",\n                \"menu1_id\": 7,\n                \"menu2_name\": \"货主\",\n                \"menu2_id\": 8\n            },\n            {\n                \"menu1_name\": \"系统配置\",\n                \"menu1_id\": 7,\n                \"menu2_name\": \"仓库\",\n                \"menu2_id\": 9\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"采购订单\",\n                \"menu2_id\": 11\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"入库交接\",\n                \"menu2_id\": 12\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"交接记录\",\n                \"menu2_id\": 13\n            },\n            {\n                \"menu1_name\": \"PDA入库管理\",\n                \"menu1_id\": 14,\n                \"menu2_name\": \"PDA入库交接\",\n                \"menu2_id\": 15\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"入库质检\",\n                \"menu2_id\": 16\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"质检任务\",\n                \"menu2_id\": 18\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"质检异常跟踪\",\n                \"menu2_id\": 19\n            },\n            {\n                \"menu1_name\": \"数据中心\",\n                \"menu1_id\": 20,\n                \"menu2_name\": \"导入导出\",\n                \"menu2_id\": 21\n            },\n            {\n                \"menu1_name\": \"策略规则配置\",\n                \"menu1_id\": 24,\n                \"menu2_name\": \"基础数据字典\",\n                \"menu2_id\": 25\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"货位管理\",\n                \"menu2_id\": 26\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"库区管理\",\n                \"menu2_id\": 27\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"容器管理\",\n                \"menu2_id\": 28\n            },\n            {\n                \"menu1_name\": \"库内管理\",\n                \"menu1_id\": 29,\n                \"menu2_name\": \"库存查询\",\n                \"menu2_id\": 30\n            },\n            {\n                \"menu1_name\": \"库内管理\",\n                \"menu1_id\": 29,\n                \"menu2_name\": \"库存交易\",\n                \"menu2_id\": 31\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"收货交易\",\n                \"menu2_id\": 32\n            },\n            {\n                \"menu1_name\": \"策略规则配置\",\n                \"menu1_id\": 24,\n                \"menu2_name\": \"入库策略\",\n                \"menu2_id\": 33\n            },\n            {\n                \"menu1_name\": \"策略规则配置\",\n                \"menu1_id\": 24,\n                \"menu2_name\": \"批属性规则\",\n                \"menu2_id\": 34\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"货品存放规则\",\n                \"menu2_id\": 35\n            },\n            {\n                \"menu1_name\": \"库内管理\",\n                \"menu1_id\": 29,\n                \"menu2_name\": \"上架任务\",\n                \"menu2_id\": 36\n            },\n            {\n                \"menu1_name\": \"库内管理\",\n                \"menu1_id\": 29,\n                \"menu2_name\": \"无单移库\",\n                \"menu2_id\": 37\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"出库订单\",\n                \"menu2_id\": 39\n            },\n            {\n                \"menu1_name\": \"策略规则配置\",\n                \"menu1_id\": 24,\n                \"menu2_name\": \"分配策略\",\n                \"menu2_id\": 40\n            },\n            {\n                \"menu1_name\": \"策略规则配置\",\n                \"menu1_id\": 24,\n                \"menu2_name\": \"波次策略\",\n                \"menu2_id\": 41\n            },\n            {\n                \"menu1_name\": \"PDA库内管理\",\n                \"menu1_id\": 42,\n                \"menu2_name\": \"PDA上架管理\",\n                \"menu2_id\": 43\n            },\n            {\n                \"menu1_name\": \"PDA库内管理\",\n                \"menu1_id\": 42,\n                \"menu2_name\": \"PDA无单移库\",\n                \"menu2_id\": 44\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"拣选任务\",\n                \"menu2_id\": 45\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"分播任务\",\n                \"menu2_id\": 46\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"二次分拣\",\n                \"menu2_id\": 47\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"单品扫描\",\n                \"menu2_id\": 48\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"复核任务\",\n                \"menu2_id\": 49\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"出库复核\",\n                \"menu2_id\": 50\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"打包称重\",\n                \"menu2_id\": 51\n            },\n            {\n                \"menu1_name\": \"PDA出库管理\",\n                \"menu1_id\": 52,\n                \"menu2_name\": \"PDA拣选\",\n                \"menu2_id\": 53\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"缺货出库单\",\n                \"menu2_id\": 54\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"出库装箱\",\n                \"menu2_id\": 55\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"装箱明细\",\n                \"menu2_id\": 56\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"出库发运\",\n                \"menu2_id\": 57\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"交接明细\",\n                \"menu2_id\": 58\n            },\n            {\n                \"menu1_name\": \"库内管理\",\n                \"menu1_id\": 29,\n                \"menu2_name\": \"库存调整\",\n                \"menu2_id\": 59\n            },\n            {\n                \"menu1_name\": \"PDA库内管理\",\n                \"menu1_id\": 42,\n                \"menu2_name\": \"PDA库存查询\",\n                \"menu2_id\": 60\n            },\n            {\n                \"menu1_name\": \"PDA入库管理\",\n                \"menu1_id\": 14,\n                \"menu2_name\": \"PDA分货\",\n                \"menu2_id\": 61\n            },\n            {\n                \"menu1_name\": \"入库管理\",\n                \"menu1_id\": 10,\n                \"menu2_name\": \"分货任务\",\n                \"menu2_id\": 62\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"打印模板\",\n                \"menu2_id\": 63\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"货品信息采集\",\n                \"menu2_id\": 64\n            },\n            {\n                \"menu1_name\": \"策略规则配置\",\n                \"menu1_id\": 24,\n                \"menu2_name\": \"出库策略\",\n                \"menu2_id\": 65\n            },\n            {\n                \"menu1_name\": \"基础数据\",\n                \"menu1_id\": 1,\n                \"menu2_name\": \"耗材管理\",\n                \"menu2_id\": 66\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"二次交运订单\",\n                \"menu2_id\": 67\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"二次交运打单\",\n                \"menu2_id\": 68\n            },\n            {\n                \"menu1_name\": \"报表\",\n                \"menu1_id\": 69,\n                \"menu2_name\": \"采购到货预测\",\n                \"menu2_id\": 70\n            },\n            {\n                \"menu1_name\": \"出库管理\",\n                \"menu1_id\": 38,\n                \"menu2_name\": \"出库打包\",\n                \"menu2_id\": 71\n            }\n        ],\n        \"token\": \"afda92910177f180f4f077e0572c09f9a99d2943\"\n    }\n}"
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "basic",
+        "basic": [
+            {
+                "key": "username",
+                "value": "<Basic Auth Username>",
+                "type": "string"
+            },
+            {
+                "key": "password",
+                "value": "<Basic Auth Password>",
+                "type": "string"
+            }
+        ]
+    },
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "f6a8b3ae-3b13-42f5-ad85-88f82d804611",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "1ea40df6-3484-48d0-9ee1-a5c0df6a0032",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "10d3c21f-bd3d-4268-ba5e-92c65c59594a",
+            "key": "baseUrl",
+            "value": "https://80764f50-86c2-463c-a104-a1a3f4718997.mock.pstmn.io",
+            "type": "string"
+        }
+    ]
+}
